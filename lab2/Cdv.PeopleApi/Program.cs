@@ -36,8 +36,9 @@ app.MapGet("/people", (PeopleDb db) =>
 app.MapPost("/people", (PeopleDb db, PersonEntity person) =>
 {
     db.People.Add(person);
+    db.SaveChanges();
 })
-.WithName("GetPeople")
+.WithName("AddPerson")
 .WithOpenApi();
 
 app.Run();

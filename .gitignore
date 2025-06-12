@@ -1,3 +1,8 @@
 **/bin/
 **/obj/
 .idea/
+
+projekt/*/node_modules/
+projekt/*/.env
+projekt/*/package-lock.json
+projekt/backend/generated

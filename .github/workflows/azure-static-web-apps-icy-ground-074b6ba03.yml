@@ -21,11 +21,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
         working-directory: ./projekt/frontend
+
+      - name: Debug env variable
+        run: echo "VITE_BASEURL=$VITE_BASEURL"
+        working-directory: ./projekt/frontend
+        env:
+          VITE_BASEURL: ${{ secrets.VITE_BASEURL }}
 
       - name: Build with env
         run: npm run build

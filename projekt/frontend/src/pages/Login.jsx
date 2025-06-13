@@ -7,6 +7,7 @@ import { useAuth } from "../context/AuthContext";
 import { showToast } from "../utils/toast";
 
 export default function Login() {
+  console.log("VITE_BASEURL:", import.meta.env.VITE_BASEURL);
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const navigate = useNavigate();

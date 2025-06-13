@@ -25,12 +25,12 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-        working-directory: ./backend
+        working-directory: ./project/backend
 
       - name: Zip artifact for deployment
         run: |
-          cd backend
-          zip -r ../release.zip *
+          cd project/backend
+          zip -r ../../release.zip *
         shell: bash
 
       - name: Upload artifact for deployment job

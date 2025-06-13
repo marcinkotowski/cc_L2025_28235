@@ -3,7 +3,7 @@
 .idea/
 
 projekt/*/node_modules/
-projekt/*/.env
+projekt/backend/.env
 projekt/*/package-lock.json
 projekt/backend/generated
 projekt/backend/.deployment

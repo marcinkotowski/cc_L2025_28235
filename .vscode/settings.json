@@ -1,0 +1,5 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/a4fd8391-1b0b-454d-9daa-c4927536ea7c/resourceGroups/Projekt/providers/Microsoft.Web/sites/express",
+  "appService.deploySubpath": "projekt\\backend"
+}
